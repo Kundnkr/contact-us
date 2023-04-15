@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  background-image: linear-gradient(to right bottom, #fc4a1a,#f7b733);
+  /* background-image: linear-gradient(to right bottom, #0f0c29, #302b63, #24243e); */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-page-3 {
+  margin: auto;
+  width: 77%;
+  min-height: 50vh;
+  padding: 20px;
+}
+
+.landing-page-3 .container-3 {
+  width: 80%;
+  margin: auto;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  min-height: 65vh;
+  border-radius: 15px;
+  background-color: white;
+  /* background-color: #d3eafc; */
+  /* background-image: linear-gradient(to right bottom,  #FF61D2 ,#FE9090); */
+  box-shadow: 0 2px 4px rgb(45 35 66 / 35%), 0 7px 13px -3px rgb(45 35 66 / 25%);
+}
+
+.landing-page-3 .container-3 .content {
+  background-image: linear-gradient(to right bottom, #4E65FF, #92EFFD);
+  border-radius: 15px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10rem;
+}
+
+.landing-page-3 .container-3 .content .contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: black;
+}
+
+.landing-page-3 .container-3 .content .contact-text h1 {
+  /* text-transform:uppercase; */
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.landing-page-3 .container-3 .content .contact-links {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 100%;
+  margin: auto;
+  height: 50px;
+  overflow: hidden;
+}
+
+.landing-page-3 .container-3 .content .contact-links a {
+  color: black;
+  padding: 10px 0 0 5px;
+  width: 45px;
+  min-height: 55px;
+  
+}
+
+.icon{
+  transition: 0.3s;
+
+}
+
+
+.landing-page-3 .container-3 form {
+  padding: 10px;
+  width: 50%;
+  margin-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.landing-page-3 .container-3 form input {
+  width: 95%;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(129, 128, 128);
+}
+
+.landing-page-3 .container-3 form input:focus,
+.landing-page-3 .container-3 form textarea:focus {
+  border: 2px solid #e63a3a;
+}
+
+.landing-page-3 .container-3 form textarea {
+  padding: 10px;
+  width: 95%;
+  height: 180px;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
+.landing-page-3 .container-3 form button {
+  color: black;
+  cursor: pointer;
+  width: 170px;
+  height: 45px;
+  font-size: 1rem;
+  border: none;
+  background-color: #e63a3a;
+  background-image: linear-gradient(to right bottom, #4E65FF, #92EFFD);
+  border-radius: 7px;
+  transition: 0.4s;
+}
+
+.landing-page-3 .container-3 form button:hover{
+  transform: scale(1.05);
+}
+.landing-page-3 .container-3 form .sendIcon {
+  margin-left: 5px;
+}
+
+.facebook:hover {
+  color: #0014f2;
+}
+
+.twitter:hover {
+  color: #28c9ff;
+}
+
+.linkedin:hover {
+  color: #09618a;
+}
+
+.instagram:hover {
+  color: #ff5656;
+}
+
+@media (max-width: 480px) {
+  .landing-page-3 {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .landing-page-3 .container-3 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .landing-page-3 .container-3 .content {
+    gap: 1rem;
+    padding: 10px 20px;
+  }
+
+  .landing-page-3 .container-3 form {
+    margin: auto;
+    width: 95%;
+  }
+  .landing-page-3 .container-3 form input{
+    margin-bottom: 15px;
+  }
+  .landing-page-3 .container-3 form textarea{
+    height: 120px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .landing-page-3 {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .landing-page-3 .container-3 {
+    flex-direction: column;
+  }
+
+  .landing-page-3 .container-3 .content {
+    gap: 3rem;
+  }
+
+  .landing-page-3 .container-3 form {
+    margin: auto;
+    width: 90%;
+  }
+}
